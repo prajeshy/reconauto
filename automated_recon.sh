@@ -43,7 +43,7 @@ dnsrecon -d $TARGET_DOMAIN -t std,axfr -D ~/SecLists/Discovery/DNS/deepmagic.com
 ffuf -w raft-large-directories.txt -u https://$TARGET_DOMAIN/FUZZ -e .php,.txt,.html -o ffuf.txt -t 100
 
 # Perform Shodan search using the Shodan API key
-curl "https://api.shodan.io/shodan/host/search?key=XzF4CTgkoDdkSNIHV8qRWr4uu8QZP8FU&query=$TARGET_DOMAIN&facets={port}" -o shodan.txt
+curl "https://api.shodan.io/shodan/host/search?key=<Your-API-Key>&query=$TARGET_DOMAIN&facets={port}" -o shodan.txt
 
 # Perform key finding using Nuclei
 nuclei -I heap.txt -t ~/nuclei-templates/file/keys/ -l subdomains.txt -o nuclei.txt
