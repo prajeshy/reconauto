@@ -34,18 +34,18 @@ cd security_assessment
 chmod +x security_assessment.sh
 ```
 
-#Functionality
+# Functionality
 This tool performs the following security assessment steps on the target domain:
 
-Subdomain enumeration using Amass and Sublist3r.
-Port scanning using Nmap.
-HTTP enumeration using Gobuster.
-SSL enumeration using SSLscan.
-DNS enumeration using Dnsrecon.
-Directory bruteforcing using Dirbuster and Ffuf.
-Shodan search using the Shodan API key.
-Key finding using Nuclei.
-Git discovery using Amass and Aquatone.
+- Subdomain enumeration using Amass and Sublist3r.
+- Port scanning using Nmap.
+- HTTP enumeration using Gobuster.
+- SSL enumeration using SSLscan.
+- DNS enumeration using Dnsrecon.
+- Directory bruteforcing using Dirbuster and Ffuf.
+- Shodan search using the Shodan API key.
+- Key finding using Nuclei.
+- Git discovery using Amass and Aquatone.
 
-#Results
+# Results
 The results of each step are stored in separate text files in a directory named after the target domain. The directory is created automatically by the script.
