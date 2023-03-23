@@ -4,10 +4,11 @@ This tool is a bash script for performing comprehensive security assessment on a
 Usage
 To use this tool, simply provide the target domain name as a command-line argument. For example:
 
-<script>
+
 Copy code
+```
 ./security_assessment.sh example.com
-</script>
+```
 
 Requirements
 Amass
@@ -26,12 +27,12 @@ Aquatone
 Installation
 To install the required tools, please refer to their respective documentation. Once all the tools are installed, simply clone this repository and make the script executable:
 
-<script>
+```
 Copy code
 git clone https://github.com/yourusername/security_assessment.git
 cd security_assessment
 chmod +x security_assessment.sh
-</script>
+```
 
 #Functionality
 This tool performs the following security assessment steps on the target domain:
